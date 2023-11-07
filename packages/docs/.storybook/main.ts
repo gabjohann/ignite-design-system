@@ -21,5 +21,15 @@ const config: StorybookConfig = {
   docs: {
     autodocs: true,
   },
+  async viteFinal(config, { configType }) {
+    if (configType === 'DEVELOPMENT') {
+      // Your development configuration goes here
+    }
+    if (configType === 'PRODUCTION') {
+      config.base = '/ignite-design-system/';
+    }
+
+    return config;
+  },
 };
 export default config;
