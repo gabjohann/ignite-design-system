@@ -6,7 +6,7 @@
     "dev": "storybook dev -p 6006",
     "deploy-storybook": "storybook-to-ghpages",
     "build-vite": "storybook build",
-    "build": "storybook build"
+    "build": "storybook build && touch ./storybook-static/.nojekyll"
   },
   "author": "Lucas Gabriel Johann",
   "license": "MIT",
