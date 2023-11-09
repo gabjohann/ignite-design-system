@@ -1,6 +1,6 @@
 {
-  "name": "@ignite-ui/tokens",
-  "version": "1.0.0",
+  "name": "@lucasjohann-ignite-ui/tokens",
+  "version": "2.0.0",
   "description": "",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -14,8 +14,8 @@
   "author": "Lucas Gabriel Fernandes Johann",
   "license": "ISC",
   "devDependencies": {
-    "@ignite-ui/ts-config": "*",
-    "@ignite-ui/eslint-config": "*",
+    "@lucasjohann-ignite-ui/ts-config": "*",
+    "@lucasjohann-ignite-ui/eslint-config": "*",
     "tsup": "^7.2.0",
     "typescript": "^5.2.2"
   }

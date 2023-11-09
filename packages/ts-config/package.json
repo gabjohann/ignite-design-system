@@ -1,6 +1,6 @@
 {
-  "name": "@ignite-ui/ts-config",
-  "version": "1.0.0",
+  "name": "@lucasjohann-ignite-ui/ts-config",
+  "version": "2.0.0",
   "author": "Lucas Gabriel Fernandes Johann",
   "license": "MIT",
   "private": true

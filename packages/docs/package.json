@@ -1,5 +1,5 @@
 {
-  "name": "@ignite-ui/docs",
+  "name": "@lucasjohann-ignite-ui/docs",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -11,10 +11,10 @@
   "author": "Lucas Gabriel Johann",
   "license": "MIT",
   "dependencies": {
-    "@ignite-ui/eslint-config": "*",
-    "@ignite-ui/react": "*",
-    "@ignite-ui/tokens": "*",
-    "@ignite-ui/ts-config": "*",
+    "@lucasjohann-ignite-ui/eslint-config": "*",
+    "@lucasjohann-ignite-ui/react": "*",
+    "@lucasjohann-ignite-ui/tokens": "*",
+    "@lucasjohann-ignite-ui/ts-config": "*",
     "@phosphor-icons/react": "^2.0.14",
     "@storybook/addon-a11y": "^7.5.2",
     "polished": "^4.2.2",
