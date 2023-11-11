@@ -26,9 +26,9 @@ jobs:
 
       - name: Publish to NPM
         uses: changesets/action@v1
-        with: 
+        with:
           publish: npm run release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          TURBO_TOKEN: mTNFdVgJprmoy6pB0o4CwDrf
+          TURBO_TOKEN: ${{ secrets.VERCEL_TOKEN }}
           TURBO_TEAM: lucasgabrieljohann
