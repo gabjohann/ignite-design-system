@@ -23,6 +23,11 @@ jobs:
           cache-dependency-path: '**/package-lock.json'
 
       - run: npm ci
+      
+      - name: Authenticate with npm
+        run: npm adduser
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Publish to NPM
         uses: changesets/action@v1
