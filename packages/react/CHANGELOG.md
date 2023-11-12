@@ -1,5 +1,11 @@
 # @lucasjohann-ignite-ui/react
 
+## 4.0.0
+
+### Major Changes
+
+- Adjustments due to Ignite Call app
+
 ## 3.0.0
 
 ### Major Changes
