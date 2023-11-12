@@ -32,7 +32,8 @@ jobs:
       - name: Publish to NPM
         uses: changesets/action@v1
         with:
-          publish: npm run release
+          publish: npm  with:
+          publish: npm publish --registry=https://registry.npmjs.org/
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TURBO_TOKEN: ${{ secrets.VERCEL_TOKEN }}
