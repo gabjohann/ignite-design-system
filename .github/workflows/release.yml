@@ -24,11 +24,6 @@ jobs:
 
       - run: npm ci
 
-      - name: Authentication with npm
-        run: npm adduser
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-
       - name: Publish to NPM
         uses: changesets/action@v1
         with:
