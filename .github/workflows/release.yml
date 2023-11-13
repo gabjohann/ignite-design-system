@@ -24,10 +24,16 @@ jobs:
 
       - run: npm ci
       
+      - name: Authenticate with npm
+        run: npm adduser
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
       - name: Publish to NPM
+        id: changesets
         uses: changesets/action@v1
         with:
-          publish: npm publish --registry=https://registry.npmjs.org/
+          publish: npm run release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
