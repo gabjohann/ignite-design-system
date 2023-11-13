@@ -30,6 +30,6 @@ export const TextArea = styled('textarea', {
   },
 })
 
-export type TextAreaProps = ComponentProps<typeof TextArea>
+export interface TextAreaProps extends ComponentProps<typeof TextArea> {}
 
 TextArea.displayName = 'TextArea'
