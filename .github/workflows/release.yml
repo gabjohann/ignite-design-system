@@ -24,16 +24,12 @@ jobs:
 
       - run: npm ci
       
-      - name: Authenticate with npm
-        run: npm adduser
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-
       - name: Publish to NPM
         uses: changesets/action@v1
         with:
           publish: npm publish --registry=https://registry.npmjs.org/
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           TURBO_TOKEN: ${{ secrets.VERCEL_TOKEN }}
           TURBO_TEAM: lucasgabrieljohann
