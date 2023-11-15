@@ -1,5 +1,11 @@
 # @lucasjohann-ignite-ui/react
 
+## 5.0.1
+
+### Patch Changes
+
+- add size control to text input component
+
 ## 5.0.0
 
 ### Major Changes

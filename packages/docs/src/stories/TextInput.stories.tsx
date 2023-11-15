@@ -9,7 +9,9 @@ import {
 export default {
   title: 'Form/Text Input',
   component: TextInput,
-  args: {},
+  args: {
+    size: 'md',
+  },
   decorators: [
     (Story) => {
       return (
@@ -28,6 +30,14 @@ export default {
 export const Primary: StoryObj<TextInputProps> = {
   args: {
     placeholder: 'Type your e-mail address',
+  },
+  argTypes: {
+    size: {
+      options: ['sm', 'md'],
+      control: {
+        type: 'inline-radio',
+      },
+    },
   },
 }
 
