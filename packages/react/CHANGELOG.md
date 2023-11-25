@@ -1,5 +1,11 @@
 # @lucasjohann-ignite-ui/react
 
+## 1.1.0
+
+### Minor Changes
+
+- fix button styles
+
 ## 5.0.1
 
 ### Patch Changes
